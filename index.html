@@ -22,11 +22,11 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     }
 
-    h1, h3 {
+    h1, h3.subtitle {
       text-align: center;
     }
 
-    h3 {
+    h3.subtitle {
       font-size: 1.2rem;
       font-weight: normal;
       color: #333;
@@ -67,6 +67,9 @@
       
       <hr class="my-4">
 
+      <h4 class="h5 font-weight-bold mb-3">Wählen Sie für jeden Beleg aus dem Interview die korrekte Kategorie und überprüfen Sie Ihre Antwort mit der "Check"-Taste:</h4>
+      <h3 class="subtitle">Möglicherweise gibt es mehrere richtige Optionen, weshalb ihr uns von eurer Wahl überzeugen müsst. Eine Gruppendiskussion folgt im Anschluss. Viel Erfolg! ;)</h3>
+      
       <ol class="mt-4">
         <li>
           <span class="beleg">0291 HH: Meine Eltern wurden am 27. August 1942, mein Vater wurde in einen Wald befohlen und wurde erschossen, meine Mutter am selben Tag nach Belzec abtransportiert und vergast.</span>
@@ -88,231 +91,4 @@
               <option value="right">Rechtsherausstellung / Nachträge</option>
               <option value="wrong">Ellipsen</option>
               <option value="wrong">Anakoluthe</option>
-              <option value="wrong">Konjunktion weil</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q4')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">0034 ET: 1869 in Polen?“<br>0035 HH: „In Warschau.“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q6" onchange="resetColor('q6')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="wrong">Anakoluthe</option>
-              <option value="wrong">Linksherausstellung</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="right">Ellipsen</option>
-              <option value="right">Reparaturen</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q6')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">0229 HH: [...] Es war Äpfelpflücken. Kriegten aber keine Kleidung.</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q8" onchange="resetColor('q8')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="right">Ellipsen</option>
-              <option value="wrong">Rechtsherausstellung / Nachträge</option>
-              <option value="wrong">Reparaturen</option>
-              <option value="wrong">Konjunktion weil</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q8')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">0399 HH: [...] Ich war immer Zionist, von Kindheit an.</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q9" onchange="resetColor('q9')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="right">Rechtsherausstellung / Nachträge</option>
-              <option value="wrong">Konjunktion weil</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q9')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">0131 HH: Waren wir, war ich, sehr zionistisch. Ich sprach fliessend hebräisch, ich hab angefangen mit viereinhalb Jahren und mit sechs Jahren sprach ich fliessend.<br>0132 ET: Durch die Schule?“<br>0133 HH: Privat. Ich wurde privat unterrichtet von einem Lehrer.</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q10" onchange="resetColor('q10')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="right">Ellipsen</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="right">Rechtsherausstellung / Nachträge</option>
-              <option value="wrong">Reparaturen</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q10')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">0177 HH: Meine Mutter wurde, das Lager in (Spogje) wurde aufgelöst.</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q11" onchange="resetColor('q11')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="wrong">Verbspitzenstellung</option>
-              <option value="wrong">Rechtsherausstellung / Nachträge</option>
-              <option value="right">Anakoluthe</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q11')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">„Aber noch eine dritte, aber die ist gestorben, mit acht Jahren.“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q14" onchange="resetColor('q14')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="right">Rechtsherausstellung / Nachträge</option>
-              <option value="wrong">Linksherausstellung</option>
-              <option value="wrong">Konjunktion weil</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q14')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">ET: „Das waren also Sie und andere neun Jungens?“<br>HH: „Neun Jungens, alles Jungens.“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q15" onchange="resetColor('q15')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="wrong">Rechtsherausstellung / Nachträge</option>
-              <option value="wrong">Reparaturen</option>
-              <option value="right">Ellipsen</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q15')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">„Meine Garantoren, als ich bei der Ankunft, waren zwei Damen, die sahen, das ist ein Vierzehnjähriger, wo soll der wohnen, wie passt der rein zu uns, hatten ihre Garantie zurückgezogen.“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q16" onchange="resetColor('q16')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="right">Anakoluthe</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="wrong">Verbspitzenstellung</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q16')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">„Weihnachten 41, nein 42, na 41, 41, Entschuldigung.“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q17" onchange="resetColor('q17')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="right">Reparaturen</option>
-              <option value="wrong">Rechtsherausstellung / Nachträge</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q17')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">„Hatten einen Pech, dass sechzig oder siebzig prozent von uns sprachen genau so gut Deutsch wie die.“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q18" onchange="resetColor('q18')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="right">Verbspitzenstellung</option>
-              <option value="wrong">Linksherausstellung</option>
-              <option value="wrong">Anakoluthe</option>
-              <option value="wrong">Konjunktion weil</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q18')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">„Sie waren unter dem Schock, unter Schreck.“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q21" onchange="resetColor('q21')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="right">Rechtsherausstellung / Nachträge</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="wrong">Ellipsen</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q21')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">ET: „Herr Haberberg, äh wann sind Sie geboren?“<br>HH: „1924“<br>ET: „Und wann genau?“<br>HH: „am 27. Oktober“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q22" onchange="resetColor('q22')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="right">Ellipsen</option>
-              <option value="wrong">Rechtsherausstellung / Nachträge</option>
-              <option value="wrong">Reparaturen</option>
-              <option value="wrong">Konjunktion weil</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q22')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">„Ich meine, es war nicht äh hatte mein Va meine Mutter, meine Eltern, wir waren ähm.“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q23" onchange="resetColor('q23')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="wrong">Rechtsherausstellung / Nachträge</option>
-              <option value="right">Anakoluthe</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q23')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">„Wir hatten genug zu fressen für 14 Jahre, nicht ((unverständlich)), abgesehen für 14 Tage.“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q24" onchange="resetColor('q24')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="wrong">Ellipsen</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="right">Reparaturen</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q24')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">HH: „[...] Und diese Minen wurden dann (-) auf die kleinen Schiffe und in die in die Nordsee versenkt.“<br>ET: „hmhm.“<br>HH: „War auch nicht angenehm.“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q25" onchange="resetColor('q25')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="wrong">Linksherausstellung</option>
-              <option value="wrong">Anakoluthe</option>
-              <option value="right">Verbspitzenstellung</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q25')">Check</button>
-          </div>
-        </li>
-        <li>
-          <span class="beleg">„Mein Onkel in Amerika, bei der Zeit hatte er schon/ schickte mir gewissermaßen ein bisschen Geld“</span>
-          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center mt-2">
-            <select class="form-control form-control-sm mb-2 mb-sm-0 mr-sm-2 flex-grow-1" name="qTags" id="q26" onchange="resetColor('q26')">
-              <option value="choose">Bitte wählen..</option>
-              <option value="wrong">Konjunktion weil</option>
-              <option value="right">Linksherausstellung</option>
-              <option value="wrong">Verbspitzenstellung</option>
-            </select>
-            <button class="btn btn-sm btn-primary px-3" onclick="check('q26')">Check</button>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-  <script>
-    function check(id) {
-      var el = document.getElementById(id);
-      el.style.backgroundColor = (el.value === "right") ? "#d4edda" : "#f8d7da";
-      el.style.borderColor = (el.value === "right") ? "#28a745" : "#dc3545";
-    }
-
-    function resetColor(id) {
-      var el = document.getElementById(id);
-      el.style.backgroundColor = "";
-      el.style.borderColor = "";
-    }
-  </script>
-</body>
-
-</html>
+              <option
